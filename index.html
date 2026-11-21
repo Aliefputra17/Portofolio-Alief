@@ -1,99 +1,255 @@
 
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alief | Personal Portfolio</title>
+
+    <meta name="description" content="Personal portfolio Muhammad Alief Putra Sopian - Network and Cybersecurity Enthusiast">
+
+    <title>Alief | Network & Cybersecurity</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <nav class="navbar">
-        <a href="#" class="logo">ALIEF<span>.</span></a>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">ALIEF<span>.</span></a>
 
-<section id="home" class="hero">
-    <p class="intro">HELLO, WELCOME TO MY PORTFOLIO</p>
-    <h1>Muhammad Alief<br><span>Putra Sopian</span></h1>
-    <h3>Network & Cybersecurity Enthusiast</h3>
-    <p class="description">
-        Saya adalah siswa SMK Wikrama Bogor jurusan
-        Teknik Jaringan Komputer dan Telekomunikasi.
-        Saya tertarik dengan networking, Linux,
-        server administration, dan cybersecurity.
-    </p>
-    <a href="#about" class="btn">Explore My Portfolio</a>
-</section>
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Buka menu" aria-expanded="false">
+                ☰
+            </button>
 
-<section id="about" class="section">
-    <h2>About <span>Me</span></h2>
-    <p>
-        Saya sedang mengembangkan kemampuan dalam
-        konfigurasi jaringan, administrasi server,
-        sistem operasi Linux, dan keamanan jaringan.
-    </p>
-</section>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="skills" class="section">
-    <h2>My <span>Skills</span></h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Networking</h3>
-            <p>IP Address, Routing, Mikrotik, dan Topologi Jaringan.</p>
-        </div>
-        <div class="card">
-            <h3>Linux</h3>
-            <p>Instalasi sistem operasi dan administrasi server.</p>
-        </div>
-        <div class="card">
-            <h3>Cybersecurity</h3>
-            <p>Mempelajari keamanan jaringan dan perlindungan sistem.</p>
-        </div>
-        <div class="card">
-            <h3>Web Development</h3>
-            <p>HTML, CSS, dan JavaScript dasar.</p>
-        </div>
-    </div>
-</section>
+    <main>
 
-<section id="projects" class="section">
-    <h2>My <span>Projects</span></h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Server Monitoring</h3>
-            <p>Mempelajari monitoring server menggunakan Nagios.</p>
-        </div>
-        <div class="card">
-            <h3>Network Configuration</h3>
-            <p>Praktik konfigurasi jaringan menggunakan Mikrotik.</p>
-        </div>
-        <div class="card">
-            <h3>Linux Administration</h3>
-            <p>Praktik pengelolaan server berbasis Linux.</p>
-        </div>
-    </div>
-</section>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-content reveal">
+                <p class="eyebrow">WELCOME TO MY DIGITAL SPACE</p>
 
-<section id="contact" class="section">
-    <h2>Contact <span>Me</span></h2>
-    <p>Terima kasih sudah mengunjungi portfolio saya.</p>
-    <p>Let's learn and grow together!</p>
-</section>
+                <h1>
+                    Muhammad Alief
+                    <span>Putra Sopian.</span>
+                </h1>
 
-<footer>
-    <p>© 2026 Muhammad Alief Putra Sopian.</p>
-    <p>Designed & Developed by Alief.</p>
-</footer>
+                <h2>
+                    I'm a <span class="typing-text">Network Enthusiast</span>
+                </h2>
+
+                <p class="hero-description">
+                    Siswa SMK Wikrama Bogor jurusan Teknik Jaringan
+                    Komputer dan Telekomunikasi. Memiliki ketertarikan
+                    pada networking, Linux, server administration,
+                    dan cybersecurity.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">
+                        Explore Projects ↗
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="hero-tags">
+                    <span>Networking</span>
+                    <span>Linux</span>
+                    <span>Cybersecurity</span>
+                </div>
+            </div>
+
+            <div class="profile-area reveal">
+                <div class="profile-glow"></div>
+                <div class="profile-circle">
+                    <span>AP</span>
+                </div>
+                <p>NETWORK & CYBERSECURITY</p>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section reveal">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2 class="section-title">About <span>Me</span></h2>
+
+            <div class="about-content">
+                <p>
+                    Halo! Saya Muhammad Alief Putra Sopian.
+                    Saya merupakan siswa SMK Wikrama Bogor
+                    dari jurusan Teknik Jaringan Komputer dan
+                    Telekomunikasi (TJKT).
+                </p>
+
+                <p>
+                    Saya sedang mengembangkan kemampuan di bidang
+                    konfigurasi jaringan, administrasi server,
+                    sistem operasi Linux, dan keamanan jaringan.
+                    Saya senang mempelajari teknologi baru serta
+                    mengembangkan kemampuan melalui praktik.
+                </p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <span>EDUCATION</span>
+                    <h3>SMK Wikrama Bogor</h3>
+                </div>
+
+                <div class="info-card">
+                    <span>MAJOR</span>
+                    <h3>TJKT</h3>
+                </div>
+
+                <div class="info-card">
+                    <span>INTEREST</span>
+                    <h3>Networking & Security</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section reveal">
+            <p class="eyebrow">WHAT I AM LEARNING</p>
+            <h2 class="section-title">My <span>Skills</span></h2>
+
+            <div class="card-grid">
+
+                <article class="skill-card">
+                    <div class="card-icon">🌐</div>
+                    <h3>Networking</h3>
+                    <p>IP Address, subnetting, routing, Mikrotik,
+                    dan topologi jaringan.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">🐧</div>
+                    <h3>Linux Administration</h3>
+                    <p>Instalasi Linux, konfigurasi server,
+                    SSH, dan manajemen sistem.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Mempelajari keamanan jaringan,
+                    perlindungan sistem, dan keamanan akun.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">📡</div>
+                    <h3>Server Monitoring</h3>
+                    <p>Mempelajari monitoring server
+                    menggunakan Nagios.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section reveal">
+            <p class="eyebrow">MY LEARNING JOURNEY</p>
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+
+            <div class="card-grid project-grid">
+
+                <article class="project-card">
+                    <div class="project-visual network-visual">
+                        <span>🌐</span>
+                        <small>NETWORK CONFIGURATION</small>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">NETWORKING</p>
+                        <h3>Network Configuration</h3>
+                        <p>Praktik konfigurasi jaringan
+                        menggunakan perangkat Mikrotik.</p>
+                        <span class="project-label">Mikrotik · Networking</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual server-visual">
+                        <span>🖥️</span>
+                        <small>SERVER MONITORING</small>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">SYSTEM ADMINISTRATION</p>
+                        <h3>Nagios Monitoring</h3>
+                        <p>Praktik mempelajari monitoring
+                        kondisi server menggunakan Nagios.</p>
+                        <span class="project-label">Linux · Nagios</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual linux-visual">
+                        <span>🐧</span>
+                        <small>LINUX ENVIRONMENT</small>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">LINUX</p>
+                        <h3>Linux Administration</h3>
+                        <p>Praktik instalasi dan pengelolaan
+                        sistem operasi serta layanan server.</p>
+                        <span class="project-label">Debian · Linux</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact-section reveal">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+
+            <p>
+                Terima kasih sudah mengunjungi portfolio saya.
+                Silakan hubungi saya melalui kontak berikut.
+            </p>
+
+            <div class="contact-buttons">
+                <a class="btn primary-btn"
+                   href="mailto:emailkamu@example.com">
+                    ✉ Send Email
+                </a>
+
+                <a class="btn secondary-btn"
+                   href="https://wa.me/62XXXXXXXXXXX"
+                   target="_blank" rel="noopener noreferrer">
+                    WhatsApp ↗
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#home" class="logo">ALIEF<span>.</span></a>
+        <p>© <span id="year">2026</span> Muhammad Alief Putra Sopian.</p>
+        <p>Built with passion for technology.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
 
 <script src="script.js"></script>
 </body>
