@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080d18;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #101827;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #00d4ff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: #00d4ff;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8%;
+}
+
+.intro {
+    color: #00d4ff;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.hero h1 span,
+.section h2 span {
+    color: #00d4ff;
+}
+
+.hero h3 {
+    color: #aab5c8;
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 600px;
+    line-height: 1.8;
+    color: #b8c2d5;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #00d4ff;
+    color: #080d18;
+    padding: 14px 25px;
+    width: fit-content;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.section {
+    padding: 80px 8%;
+    line-height: 1.8;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 750px;
+    color: #b8c2d5;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #101827;
+    border: 1px solid #26364e;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #00d4ff;
+}
+
+.card h3 {
+    color: #00d4ff;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #b8c2d5;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #101827;
+    color: #aab5c8;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
